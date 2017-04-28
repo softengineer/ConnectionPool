@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- 
+ Connection pool configuration definition file,
+ support multiple connectin pool definitions
+ -->
+<connectionpools>
+    <!-- pool name -->
+	<connectionpool name = "mypool" >
+	
+	  <!--url  pool connection url -->
+	  <property name = "url" >192.168.1.1</property>
+	  
+	  <!-- minpoolsize the minimum pool size when initializing -->
+	  <property name = "minpoolsize" >10</property>
+	  
+	  <!-- maxpoolsize the maximum pool size -->
+	  <property name = "maxpoolsize" >20</property>
+	  
+	  <!-- username connection username -->
+	  <property name = "username" >peter</property>
+	  
+	  <!-- username connection password -->
+	  <property name = "password" >peter</property>
+	</connectionpool>
+	
+	<connectionpool name = "pool2" >
+	  <property name = "url" >192.168.1.20</property>
+	  <property name = "minpoolsize" >10</property>
+	  <property name = "maxpoolsize" >20</property>
+	  <property name = "username" >John</property>
+	  <property name = "password" >John</property>
+	</connectionpool>
+</connectionpools>
